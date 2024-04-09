@@ -24,15 +24,27 @@
  */
 
 
+
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar_menu');
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active')
+    menuLinks.classList.toggle('active');
+});
+
+/*
 const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
+const MY_STORY_URL = "https://cdn3.vectorstock.com/i/1000x1000/45/02/decorative-yellow-bird-vector-34594502.jpg";
 
 // This is an array of strings (TV show titles)
 let titles = [
     "Fresh Prince of Bel Air",
     "Curb Your Enthusiasm",
-    "East Los High"
+    "East Los High",
+    "My Story"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
@@ -52,11 +64,17 @@ function showCards() {
         let imageURL = "";
         if (i == 0) {
             imageURL = FRESH_PRINCE_URL;
-        } else if (i == 1) {
+        } 
+        else if (i == 1) {
             imageURL = CURB_POSTER_URL;
-        } else if (i == 2) {
+        } 
+        else if (i == 2) {
             imageURL = EAST_LOS_HIGH_POSTER_URL;
         }
+        else if (i == 3) {
+            imageURL = MY_STORY_URL;
+        }
+
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, imageURL); // Edit title and image
@@ -92,3 +110,4 @@ function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
+*/

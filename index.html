@@ -2,13 +2,114 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>FIT | Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/57f6f6e3b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- navbar section-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">
+                <i  class="fa-solid fa-dumbbell"></i>FIT
+            </a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/index.html" class="navbar_links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/exercises.html" class="navbar_links">
+                        Exercises
+                    </a>
+                </li>
+                <!--
+                <li class="navbar_item">
+                    <a href="/workout.html" class="navbar_links">
+                        Workout
+                    </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/" class="button">
+                        Sign Up
+                    </a>
+                </li>
+                -->
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Exercise Section-->
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>Exercising</h1>
+                <h2>Benefits</h2>
+                <p>
+                    Exercising can lead to lifelong benefits, such as 
+                </p>
+                <button class="main_btn"><a href="/exercises.html">Find Exercises</a></button>
+            </div>
+            <div class="main_img--container">
+                <img src="images/pic1.svg" alt="pic" id="main_img">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Fit -->
+    <!--
+    <div class="about">
+        <h1>See what the hype is about</h1>
+        <div class="about_container">
+            <div class="about_card">
+                <h2>Experience bliss</h2>
+                <p>AI powered tech</p>
+                <button><a href="/ack_credits.html">Acknowledgements</a></button>
+            </div>
+            <div class="about_card">
+                <h2>are you ready</h2>
+                <p>take the leap</p>
+                <button><a href="/meetme.html">About Me</a></button>
+            </div>
+            <div class="about_card">
+                <h2>Experience bliss</h2>
+                <p>AI powered tech</p>
+                <button>
+                    <a href="https://github.com/Snap-Engineering-Academy-2023/sea-stage2-project">Source Code</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- Footer Section -->
+
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link-wrapper">
+                <div class="footer_link-items">
+                    <h2>About FIT</h2>
+                    <a href="/ack_credits.html">Acknowledgements and Credits</a>
+                    <a href="/meetme.html">Meet me!</a>
+                    <a href="https://github.com/Snap-Engineering-Academy-2023/sea-stage2-project">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
     <header class="main-header">
         <h1 class="title">LA TV Shows</h1>
     </header>
@@ -34,6 +135,8 @@
             Remove A Card!
         </button>
     </div>
+    -->
+    <script src="scripts.js"></script>
 </body>
 
 </html>
