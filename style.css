@@ -27,7 +27,6 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-
 }
 
 #navbar_logo {
@@ -43,7 +42,6 @@ body {
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-
 }
 
 .fa-dumbbell {
@@ -94,13 +92,14 @@ body {
     background: #A0D2DB;
     color: #132d3f;
 }
-*/
+
 
 .button:hover {
     background: #3e92cc;
     color: #fff;
     transition: all 0.3s ease;
 }
+*/
 
 .navbar_links:hover {
     color: #3e92cc;
@@ -173,11 +172,11 @@ body {
         transform: translate(5%, 20%);
     }
 
-    /*
+    
     .navbar_btn {
         padding-bottom: 2rem;
     }
-
+    /*
     .button {
         display: flex;
         justify-content: center;
@@ -207,7 +206,7 @@ body {
     
 }
 
-/* Exercise and Benefits Section CSS*/
+/* Home_Exercise Section CSS*/
 .main {
     background-color: #ffffff;
 }
@@ -298,11 +297,20 @@ body {
     width: 100%;
 }
 
-.main_img-container {
+.main_img--container {
     text-align: center;
 }
 
 #main_img {
+    height: 80%;
+    width: 80%;
+}
+
+.main_img2--container {
+    text-align: center;
+}
+
+#main_img2 {
     height: 80%;
     width: 80%;
 }
@@ -365,133 +373,99 @@ body {
     }
 }
 
-/* About CSS */
-/*
-.about {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+/* exercise cards */
+.exercise_card {
+    background-color: #ffffff;
 }
 
-.about h1 {
+#exercise_card-container {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 5vh;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+}
+
+.exercise_card-content h2 {
+    font-size: 2rem;
     background-color: #648ece;
-    background-image: linear-gradient(to right, #648ece 0%, #5584ca 0%, 
-    #4276c4 21%, #215aaf 52%, #124a9e 78%, #04419e 100%);
     background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
 
-.about_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.exercise_card-content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #132d3f;
 }
 
-.about_card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient
-        (to bottom, 
-        rgba(0,0,0,0) 0%, 
-        rgba(17,17,17,0.6) 100%
-        ), 
-        url('/images/pic3.jpg');
-    background-size: cover;
-    position: relative;
-    color: #648ece;
+.exercise_card_img--container {
+    text-align: center;
 }
 
-.about_card:nth-child(2) {
-    background-image: linear-gradient
-        (to bottom, 
-        rgba(0,0,0,0) 0%, 
-        rgba(17,17,17,0.6) 100%
-        ), 
-        url('/images/pic4.jpg');
+#exercise_img {
+    height: 80%;
+    width: 80%;
 }
 
-.about h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
 
-.about_card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
 
-.about_card button {
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #3e92cc;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
-.about_card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
 
-@media screen and (max-width: 960px) {
-    .about {
-        height: 1600px;
-    }
 
-    .about h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .about {
-        height: 1400px;
-    }
 
-    .about h1 {
-        font-size: 1.2rem;
-    }
 
-    .about_card {
-        width: 300px;
-    }
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer CSS */
 
 .footer_container {
     background-color: #eff1f3;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer_links {
     width: 100%;
     max-width: 800px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .footer_link-wrapper {
@@ -540,6 +514,10 @@ body {
         width: 100%
     }
 }
+
+
+
+
 
 
 /*
